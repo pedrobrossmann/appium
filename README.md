@@ -4,38 +4,21 @@
 * Framework para crição dos testes [appium](http://appium.io/)
 * Framework para execução dos testes [JUnit](https://junit.org/junit5/)
 * Biblioteca para gerar informações fakes [javafaker](https://github.com/DiUS/java-faker)
-#### 1. Clone o projeto
+#### 1. Requisitos 
 
 ```
-git clone https://github.com/Bonfipa/desafio01.git
-cd desafio01
+1 - Servidor Appium
+2 - Emulador Android
 ```
 
-#### 2. Atualize as dependencias
+#### 2. Baixe as dependencias 
 
 ```
-npm install
+Após clonar o projeto faça reload do pom.xml
 ```
-#### 3. Execute o cypress com interface gráfica
+#### 3. Execute o testes utilizado o JUnit
 ```
-npm run cy:open 
+1º Execute o servidor Appium
+2º Execute o emulador
+3º Execute os testes individualmente, por arquivo ou configure por pasta com o JUnit
 ```
-#### 4. Execute o cypress via linha de comando
-```
-npm run cy:run
-```
-#### 5. Execute os testes via linha de comando e gere relátorio
-```
-npm run cy:run
-npm run cy:report:merge
-npm run cy:report:mocha
-```
-
-#### 6. Se tiver necessidade, exclua os aquivos gerados para o relátorio
-```
-npm run cy:report:clean
-```
-
-# Integração com Github pages
-
-* A cada pull request ou push todos os testes são executados. O relatório pode ser acessado [aqui](https://pedrobrossmann.github.io/desafio01/)
